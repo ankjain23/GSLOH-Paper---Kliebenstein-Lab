@@ -69,7 +69,7 @@ avg_data <- dataset %>%
   summarise(mean_preference = mean(preference, na.rm = TRUE),
             mean_conversion_rate = mean(conversion.rate, na.rm = TRUE))
 
-# Determine color coding based on whether mean preference is > 0.5
+# Determine color coding based on whether mean preference is > 0.5 
 avg_data <- avg_data %>%
   mutate(preference_group = mean_preference > 0.5)
 
